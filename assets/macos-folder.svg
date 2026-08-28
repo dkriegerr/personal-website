@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 176" role="img" aria-label="macOS style blue folder icon">
+  <defs>
+    <linearGradient id="folderBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a8d8f0" />
+      <stop offset="1" stop-color="#72b8e0" />
+    </linearGradient>
+    <linearGradient id="bodyShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.62" />
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="tabShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.58" />
+      <stop offset="0.52" stop-color="#ffffff" stop-opacity="0.14" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <filter id="softBlueShadow" x="-12%" y="-16%" width="124%" height="132%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#7fa6ba" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <g filter="url(#softBlueShadow)">
+    <path
+      d="M22 18
+         H72
+         Q82 18 88 27
+         L94 36
+         H230
+         Q242 36 242 48
+         V154
+         Q242 166 230 166
+         H26
+         Q14 166 14 154
+         V30
+         Q14 18 22 18
+         Z"
+      fill="url(#folderBlue)"
+    />
+
+    <path
+      d="M22 18
+         H72
+         Q82 18 88 27
+         L94 36
+         H230
+         Q242 36 242 48
+         V154
+         Q242 166 230 166
+         H26
+         Q14 166 14 154
+         V30
+         Q14 18 22 18
+         Z"
+      fill="none"
+      stroke="#ffffff"
+      stroke-opacity="0.4"
+      stroke-width="3"
+    />
+
+    <path
+      d="M22 18
+         H72
+         Q82 18 88 27
+         L94 36
+         H22
+         Q14 36 14 30
+         Q14 18 22 18
+         Z"
+      fill="url(#tabShine)"
+    />
+
+    <path
+      d="M22 20
+         H72
+         Q80 20 85 28
+         L90 34
+         H22
+         Q16 34 16 30
+         Q16 20 22 20
+         Z"
+      fill="none"
+      stroke="#ffffff"
+      stroke-opacity="0.4"
+      stroke-width="2"
+    />
+
+    <path
+      d="M16 48
+         Q16 38 26 38
+         H230
+         Q240 38 240 48
+         V95
+         H16
+         Z"
+      fill="url(#bodyShine)"
+    />
+
+    <rect
+      x="16"
+      y="38"
+      width="224"
+      height="126"
+      rx="10"
+      ry="10"
+      fill="none"
+      stroke="#ffffff"
+      stroke-opacity="0.4"
+      stroke-width="2"
+    />
+  </g>
+</svg>

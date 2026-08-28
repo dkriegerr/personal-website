@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notes | Diana Krieger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800;900&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260827-right-dates" />
+  </head>
+  <body class="archive-page notes-locked-page">
+    <header class="site-header is-scrolled">
+      <span class="brand" aria-label="Diana Krieger">D.</span>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#currently">Currently</a>
+        <a href="index.html#work">Work Drop</a>
+        <a href="index.html#contact">Based</a>
+      </nav>
+    </header>
+
+    <main class="archive-main notes-main">
+      <a class="back-link" href="index.html#currently">Back to notes folder</a>
+      <section class="section notes-section" aria-labelledby="notes-title">
+        <div class="section-heading">
+          <p class="section-kicker">Notes</p>
+          <h2 id="notes-title">Recent thoughts</h2>
+        </div>
+        <div class="notes-list">
+          <div class="note-link">
+            <span>I hate how art always knows.</span>
+            <time datetime="2026-08-06">06.08.26</time>
+          </div>
+          <div class="note-link">
+            <span>Music speaks for me.</span>
+            <time datetime="2026-07-30">30.07.26</time>
+          </div>
+          <div class="note-link">
+            <span>Liking things as concepts.</span>
+            <time datetime="2026-07-23">23.07.26</time>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="notes-warning-overlay" role="presentation">
+      <section
+        class="notes-warning"
+        role="alertdialog"
+        aria-modal="true"
+        aria-labelledby="notes-warning-title"
+        aria-describedby="notes-warning-copy"
+      >
+        <div class="notes-warning-body">
+          <h2 id="notes-warning-title">Folder not found yet.</h2>
+          <p id="notes-warning-copy">Notes page preview is locked.</p>
+        </div>
+        <button class="notes-warning-ok" type="button" data-notes-warning-ok>OK</button>
+      </section>
+    </div>
+    <script>
+      const lockedContent = document.querySelectorAll("body > header, body > main");
+      const okButton = document.querySelector("[data-notes-warning-ok]");
+
+      lockedContent.forEach((element) => {
+        element.inert = true;
+      });
+
+      okButton.focus();
+      okButton.addEventListener("click", () => {
+        window.location.href = "index.html#currently";
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          event.preventDefault();
+        }
+
+        if (event.key === "Tab") {
+          event.preventDefault();
+          okButton.focus();
+        }
+      });
+    </script>
+  </body>
+</html>

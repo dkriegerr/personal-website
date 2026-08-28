@@ -1508,6 +1508,20 @@ body {
   width: 100%;
 }
 
+/* Prevent a white subpixel seam while the first-view artworks are painted. */
+.studio-archive-page.sketch-book-viewer-page .studio-piece {
+  background: #000;
+}
+
+.studio-archive-page.sketch-book-viewer-page .studio-piece img {
+  height: calc(100% + 2px);
+  inset: -1px;
+  max-width: none;
+  position: absolute;
+  transform: none;
+  width: calc(100% + 2px);
+}
+
 .studio-archive-fixed-page {
   height: 100svh;
   overflow: hidden;

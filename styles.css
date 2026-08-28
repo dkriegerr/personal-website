@@ -2158,7 +2158,7 @@ main > section:not(.hero) {
 
 @media (max-width: 400px) {
   .hero-image {
-    transform: translateY(calc(-50% + 16px));
+    transform: translateY(calc(-50% + 4px));
   }
 }
 

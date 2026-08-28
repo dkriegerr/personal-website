@@ -9,7 +9,7 @@
   --red-soft: #ffd6d8;
   --cream: #ffffff;
   --shadow: 0 24px 60px rgba(5, 5, 5, 0.16);
-  color-scheme: light;
+  color-scheme: only light;
   font-family: "Instrument Sans", Arial, sans-serif;
 }
 
@@ -18,6 +18,7 @@
 }
 
 html {
+  color-scheme: only light;
   scroll-behavior: smooth;
 }
 

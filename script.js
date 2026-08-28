@@ -27,7 +27,10 @@ const scrollToSection = (id, behavior = "smooth") => {
   const headerOffset = header ? header.offsetHeight : 0;
   let targetTop = target.getBoundingClientRect().top + window.scrollY;
 
-  if (id === "work") {
+  const alignDesktopCurrently =
+    id === "currently" && window.matchMedia("(min-width: 821px)").matches;
+
+  if (id === "work" || alignDesktopCurrently) {
     const heading = target.querySelector(".section-kicker");
     const currently = document.getElementById("currently");
     const desiredHeadingGap = currently

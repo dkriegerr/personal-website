@@ -1685,6 +1685,18 @@ body {
   transform: translateX(-3%);
 }
 
+.sketch-book-page .mark-twelve .studio-piece {
+  aspect-ratio: 1 / 1.18;
+  background: #840200;
+  box-shadow: none;
+}
+
+.sketch-book-page .mark-twelve .studio-piece img {
+  filter: url("#sketch-12-red-key") grayscale(1);
+  object-fit: contain;
+  object-position: center center;
+}
+
 .sketch-book-viewer-page {
   overflow: hidden;
 }

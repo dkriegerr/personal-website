@@ -11,9 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800;900&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260829-fixed-colors" />
+    <link rel="stylesheet" href="styles.css?v=20260916-sketch-012-ink-key" />
   </head>
   <body class="archive-page sketch-book-page sketch-book-all-page">
+    <svg width="0" height="0" aria-hidden="true" focusable="false">
+      <filter id="sketch-12-red-key" color-interpolation-filters="sRGB">
+        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -1 1 0 0 1" />
+        <feComponentTransfer result="keyed">
+          <feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1" />
+        </feComponentTransfer>
+        <feComposite in="keyed" in2="SourceGraphic" operator="in" />
+      </filter>
+    </svg>
     <header class="site-header is-scrolled">
       <span class="brand" aria-label="Diana Krieger">D.</span>
       <nav class="site-nav" aria-label="Primary navigation">
@@ -98,6 +107,12 @@
             <img src="assets/sketch-11.jpg" alt="Sketch book artwork 11" />
           </span>
           <h2>sketch 011</h2>
+        </article>
+        <article class="studio-artwork mark-twelve">
+          <span class="studio-piece">
+            <img src="assets/sketch-12.jpg" alt="Black-and-white figure drawing on a deep red background" width="1028" height="1447" loading="lazy" />
+          </span>
+          <h2>sketch 012</h2>
         </article>
       </section>
     </main>

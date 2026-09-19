@@ -1528,12 +1528,26 @@ body {
   overflow: hidden;
 }
 
+.field-notes-page.studio-archive-fixed-page {
+  height: auto;
+  min-height: 100svh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .studio-archive-fixed-page .archive-main {
   box-sizing: border-box;
   height: 100svh;
   overflow: hidden;
   padding-bottom: 24px;
   padding-top: 112px;
+}
+
+.field-notes-page.studio-archive-fixed-page .archive-main {
+  height: auto;
+  min-height: 100svh;
+  overflow: visible;
+  padding-bottom: 86px;
 }
 
 .studio-archive-fixed-page .archive-nav-row {
@@ -1574,6 +1588,10 @@ body {
 
 .field-notes-page .mark-four .studio-piece {
   aspect-ratio: 1179 / 774;
+}
+
+.field-notes-page .mark-noname-one .studio-piece {
+  aspect-ratio: 2775 / 2109;
 }
 
 .field-notes-page .mark-five .studio-piece {

@@ -1066,8 +1066,14 @@ body {
 }
 
 .brand {
-  background: #ff0000;
-  color: #000;
+  background-color: #ff0000;
+  background-image: url("assets/diana-brand-icon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+  font-size: 0;
+  overflow: hidden;
 }
 
 .site-nav,

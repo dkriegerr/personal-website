@@ -1721,6 +1721,35 @@ body {
   object-position: center center;
 }
 
+.sketch-book-page .mark-thirteen .studio-piece {
+  aspect-ratio: 1 / 1.18;
+  background: #fff;
+}
+
+.sketch-book-page .mark-thirteen .studio-piece img {
+  object-fit: contain;
+  object-position: center center;
+  transform: translate(-1%, 2%) scale(1.52);
+  transform-origin: center center;
+}
+
+.sketch-book-page .studio-artwork h2 {
+  color: #d0d0d0 !important;
+  filter: none;
+  font-feature-settings: "tnum" 1;
+  font-size: 0.86rem;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.1em;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: relative;
+  text-shadow: none;
+  -webkit-font-smoothing: none;
+  -webkit-text-stroke: 0;
+  -webkit-text-fill-color: #d0d0d0;
+}
+
 .sketch-book-viewer-page {
   overflow: hidden;
 }

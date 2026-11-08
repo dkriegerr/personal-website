@@ -1515,6 +1515,19 @@ body {
   width: 100%;
 }
 
+.studio-archive-page .mark-three .studio-piece {
+  aspect-ratio: 1712 / 2200;
+  background: #fff;
+  border: 0;
+}
+
+.studio-archive-page .mark-three .studio-piece img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+
 /* Prevent a white subpixel seam while the first-view artworks are painted. */
 .studio-archive-page.sketch-book-viewer-page .studio-piece {
   background: #000;
